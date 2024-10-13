@@ -1,4 +1,4 @@
-from database import Base
+from .database import Base
 from sqlalchemy import ForeignKey
 from sqlalchemy.orm import relationship, Mapped, mapped_column
 from typing import Annotated
