@@ -2,9 +2,8 @@ from sqlalchemy import delete, select
 from sqlalchemy.ext.asyncio import AsyncSession
 from fastapi import FastAPI, Depends, HTTPException
 
-import models
-from database import engine, get_db
-import schemas
+from app import models, schemas
+from app.database import engine, get_db
 
 app = FastAPI()
 
